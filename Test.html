@@ -5,7 +5,7 @@
  </head>
  <body>
    <H1> あああ </H1>
-<p align="right"> 短い段落です
+   <p align= center> 短い段落です
 <hr>
 <pre>
 </pre>
@@ -13,7 +13,7 @@
 <a href="https://www.google.co.jp/">ここをクリック</a>
 <table>
   <tr>
-    <td>セル2</td><td>セル3</td>
+    <td>セル2</td><td>セル3</td><td>セル４</td><td>セル１</td>
   </tr>
   <tr>
     <td>セル2</td><td>セル3</td>
@@ -40,7 +40,20 @@
   <div>ここはdivタグです。</div>
 
 
-
+  <form action="/my-handling-form-page" method="post">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="user_name">
+  </div>
+  <div>
+    <label for="mail">E-mail:</label>
+    <input type="email" id="mail" name="user_mail">
+  </div>
+  <div>
+    <label for="msg">Message:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </div>
+</form>
 
 
 
@@ -63,3 +76,13 @@
 
 </body>
 </html>
+
+
+
+<style>
+div {background: red;}
+
+h1 {color: red; }
+h1 {background: blue;}
+
+</style>
