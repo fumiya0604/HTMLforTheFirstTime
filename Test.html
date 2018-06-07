@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
  <head>
+   <meta charset="utf-8">
    <title>サンプル</title>
+   <link rel="stylesheet" href="../common/css/style.css">
  </head>
  <body>
    <H1> あああ </H1>
@@ -11,51 +13,93 @@
 </pre>
 <img alt="サンプル画像です" src="2017-12-10 18.38.29.jpg" width="500px" height="300px">]
 <a href="https://www.google.co.jp/">ここをクリック</a>
-<table>
+ <h2>猫ランキング</h2>
+ <table>
   <tr>
-    <td>セル2</td><td>セル3</td><td>セル４</td><td>セル１</td>
+    <td>１位 三毛猫</td><td>２位 アメリカンショートヘアー</td><td>３位 シャム</td>
   </tr>
+  <h3>円盤型の最強食べ物ランキング
   <tr>
-    <td>セル2</td><td>セル3</td>
+    <td>１位 ピザ</td><td>２位 お好み焼き</td><td>３位 ハンバーグ</td>
   </tr>
 <tr>
-    <td>セル2</td><td>セル3</td>
+  <h4>google play おすすめランキング
+    <td>１位 セブン-イレブンアプリ</td><td>２位 ドラゴンボール　レジェンズ</td><td>３位 Til Tok</td>
   </tr>
-
+<h5>J-popランキング
+  <td>１位 EXILE　Awakening</td><td>２位 Sonar Pocket やばば</td><td>３位 井上苑子 Mine. </td>
 </table>
-
-<ol>
-  <li>
-    <p>リスト</p>
-    <p><span>ここはspanです</span></p>
-  </li>
-  <li>リスト2</li>
-  <li>リスト3</li>
-<ol>
-
-<div>
-  <p>ここはpタグです</p>
-  <p>ここもpタグです。
-  </div>
-  <div>ここはdivタグです。</div>
 
 
   <form action="/my-handling-form-page" method="post">
   <div>
-    <label for="name">Name:</label>
+    <label for="name">名前:</label>
     <input type="text" id="name" name="user_name">
   </div>
   <div>
-    <label for="mail">E-mail:</label>
+    <label for="mail">メール:</label>
     <input type="email" id="mail" name="user_mail">
   </div>
   <div>
-    <label for="msg">Message:</label>
+    <label for="msg">メッセージ:</label>
     <textarea id="msg" name="user_message"></textarea>
   </div>
 </form>
 
 
+<ol>
+
+  <li>
+    <p>サンプル</p>
+    <p><span>ここはspanです</span></p>
+  </li>
+  <li>三毛猫 アメリカンショートヘアー シャム</li>
+  <li>ピザ　お好み焼き　ハンバーグ</li>
+  <li>EXILE Sonar Pocket 井上苑子</li>
+</ol>
+
+<div>
+  <p>ありがとうございました</p>
+  <p>これからもよろしくお願いします</p>
+  </div>
+  <div>今までありがとうございました</div>
+
+<form action="comfirm.html" method="post">
+<p>
+   <label>名前<input type="text" name="username"></label>
+</p>
+<p>興味のある分野(複数回答可回答可):
+  <label><input type="checkbox" name="field" value="html">HTML</label>
+  <label><input type="checkbox" name="field" value="css">CSS</label>
+  <label><input type="checkbox" name="field" value="design">デザイン</label>
+  <label><input type="checkbox" name="field" value="other">その他</label>
+</p>
+<p>サイトの評価：
+  <label><input type="radio" name="evaluation" value="1">わるい</label>
+  <label><input type="radio" name="evaluation" value="2" checked>ふつう</label>
+  <label><input type="radio" name="evaluation" value="3">よい</label>
+</p>
+<p>お住いの地域：
+  <select name="area">
+    <option value="hokkaido">北海道</option>
+    <option value="tohoku">東北</option>
+    <option value="kanto">関東</option>
+    <option value="chubu">中部</option>
+    <option value="kansai">関西</option>
+    <option value="chugoku">中国</option>
+    <option value="shikoku">四国</option>
+    <option value="kyushu_okinawa">九州・沖縄</option>
+  </select>
+  <p>
+  <p>
+     <label>コメント：
+       <textarea name="comment" cols="50" rows="10"></textarea>
+     </label>
+   </p>
+   <p>
+     <input type="reset" value="リセット"><input type="submit" value="送信">
+   </p>
+ </form>
 
 
 
@@ -76,13 +120,3 @@
 
 </body>
 </html>
-
-
-
-<style>
-div {background: red;}
-
-h1 {color: red; }
-h1 {background: blue;}
-
-</style>
