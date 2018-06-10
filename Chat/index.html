@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>chat</title>
+<script src="js/json.js"></script>
+<style>
+.red{
+	color : red
+}
+.blue{
+	color : blue
+}
+</style>
+</head>
+<body>
+<h1>サンプルテキストのみチャット</h1>
+
+<p>入力フォーム<p>
+<form name="form">
+name : <input type="text" name="name" size="8"/>
+content : <input type="text" name="content" size="80"/><br/>
+<input type="button" value="送信" onclick="appendText(form)"/>
+</form>
+<hr/>
+<div id="room"></div>
+
+</body>
+</html>
