@@ -1,33 +1,33 @@
 function appendText(form){
-	var room = document.getElementById('room');  //id‚©‚çdiv‚ğæ“¾
-	var map = new Map();                         //Map‚ğ¶¬
+	var room = document.getElementById('room');  //idã‹ã‚‰divã‚’å–å¾—
+	var map = new Map();                         //Mapã‚’ç”Ÿæˆ
 	
-	var name = form.name.value;                  //name‚Ì’†g‚ğæ“¾
+	var name = form.name.value;                  //nameã®ä¸­èº«ã‚’å–å¾—
 	
-	var content = form.content.value;            //content‚Ì’†g‚ğæ“¾
+	var content = form.content.value;            //contentã®ä¸­èº«ã‚’å–å¾—
 	
-	map.set('name', name);                       //“ü—Í’l‚ğJSONŒ`®‚É•ÏŠ·
+	map.set('name', name);                       //å…¥åŠ›å€¤ã‚’JSONå½¢å¼ã«å¤‰æ›
 	map.set('content', content);
 	
-	var toJson = JSON.stringify([...map]);       //JSON‚É•ÏŠ·‚·‚é
+	var toJson = JSON.stringify([...map]);       //JSONã«å¤‰æ›ã™ã‚‹
 	
-	console.log(toJson + '‚ªJSONŒ`®');
+	console.log(toJson + 'ãŒJSONå½¢å¼');
 	
-	var toJs = JSON.parse(toJson);               //JavaScript‚Éƒp[ƒX‚·‚é
-	console.log(toJs + '‚ªƒp[ƒX‚µ‚Ä–ß‚µ‚½Œ‹‰Ê');
+	var toJs = JSON.parse(toJson);               //JavaScriptã«ãƒ‘ãƒ¼ã‚¹ã™ã‚‹
+	console.log(toJs + 'ãŒãƒ‘ãƒ¼ã‚¹ã—ã¦æˆ»ã—ãŸçµæœ');
 	
-	var text = document.createElement('div');    //V‚µ‚­divƒ^ƒO‚ğì¬‚·‚é
-	if(name == '‚Ğ‚ë‚Æ'){
+	var text = document.createElement('div');    //æ–°ã—ãdivã‚¿ã‚°ã‚’ä½œæˆã™ã‚‹
+	if(name == 'ã²ã‚ã¨'){
 		text.setAttribute('class', 'red');
-	}else if(name == '‚Ó‚İ‚â'){
+	}else if(name == 'ãµã¿ã‚„'){
 		text.setAttribute('class', 'blue');
 	}
 	
 	
-	if(name != ""){  //name‚ª“ü—Í‚³‚ê‚Ä‚¢‚½‚ç
-		text.innerHTML = name + ' : ' + content;  //“ü—Í‚³‚ê‚½•¶š‚ğì¬‚µ‚½divƒ^ƒO‚ÌƒZƒbƒg‚·‚é
+	if(name != ""){  //nameãŒå…¥åŠ›ã•ã‚Œã¦ã„ãŸã‚‰
+		text.innerHTML = name + ' : ' + content;  //å…¥åŠ›ã•ã‚ŒãŸæ–‡å­—ã‚’ä½œæˆã—ãŸdivã‚¿ã‚°ã®ã‚»ãƒƒãƒˆã™ã‚‹
 	}
 	
-	room.appendChild(text);                       //Œ³‚Ìdiv‚ÉV‚Åì¬‚µ‚½div‚ğq—v‘f‚Æ‚µ‚Äappend(’Ç‰Á)‚·‚é
+	room.appendChild(text);                       //å…ƒã®divã«æ–°ã§ä½œæˆã—ãŸdivã‚’å­è¦ç´ ã¨ã—ã¦append(è¿½åŠ )ã™ã‚‹
 	
 }
